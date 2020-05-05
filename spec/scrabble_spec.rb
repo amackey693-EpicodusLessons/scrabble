@@ -3,30 +3,38 @@ require('scrabble')
 
 describe ('Scrabble#scrabble_score') do
   it("returns a scrabble score for a letter with a point value of 1") do
-    expect(scrabble_score.fetch("a")).to(eq(1))
+    word1 = Scrabble.new("a")
+    expect(word1.scrabble_score.fetch("a")).to(eq(1))
   end
   it("returns a scrabble score for a letter with a point value of 2") do
-    expect(scrabble_score.fetch("d")).to(eq(2))
+    word1 = Scrabble.new("d")
+    expect(word1.scrabble_score.fetch("d")).to(eq(2))
   end
   it("returns a scrabble score for a letter with a point value of 3") do
-    expect(scrabble_score.fetch("m")).to(eq(3))
+    word1 = Scrabble.new("m")
+    expect(word1.scrabble_score.fetch("m")).to(eq(3))
   end
   it("returns a scrabble score for a letter with a point value of 4") do
-    expect(scrabble_score.fetch("h")).to(eq(4))
+    word1 = Scrabble.new("h")
+    expect(word1.scrabble_score.fetch("h")).to(eq(4))
   end
   it("returns a scrabble score for a letter with a point value of 5") do
-    expect(scrabble_score.fetch("k")).to(eq(5))
+    word1 = Scrabble.new("a")
+    expect(word1.scrabble_score.fetch("k")).to(eq(5))
   end
   it("returns a scrabble score for a letter with a point value of 8") do
-    expect(scrabble_score.fetch("j")).to(eq(8))
+    word1 = Scrabble.new("j")
+    expect(word1.scrabble_score.fetch("j")).to(eq(8))
   end
   it("returns a scrabble score for a letter with a point value of 10") do
-    expect(scrabble_score.fetch("z")).to(eq(10))
+    word1 = Scrabble.new("z")
+    expect(word1.scrabble_score.fetch("z")).to(eq(10))
   end
 end
 
-describe ('#compare') do
+describe ('Scrabble#compare') do
   it("check that the compare function is properly splitting a word") do
-    expect(compare("hello")).to(eq(["h", "e", "l", "l", "o"]))
+    word1 = Scrabble.new("hello")
+    expect(word1.compare).to(eq(8))
   end
 end
