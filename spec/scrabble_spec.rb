@@ -17,4 +17,10 @@ describe ('#scrabble_score') do
   it("returns a scrabble score for a letter with a point value of 5") do
     expect(scrabble_score.fetch("k")).to(eq(5))
   end
+  it("returns a scrabble score for a letter with a point value of 8") do
+    expect(scrabble_score.fetch("j")).to(eq(8))
+  end
+  it("returns a scrabble score for a letter with a point value of 10") do
+    expect(scrabble_score.fetch("z")).to(eq(10))
+  end
 end
