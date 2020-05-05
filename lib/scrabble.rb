@@ -1,12 +1,21 @@
 #!/usr/bin/env ruby
 require('pry') 
 
+  def compare(word)
+    split_word = word.split("") #turns our word into an array of ltrs
+    # array = [] #blank array to push new score to 
+    # score = word.scrabble_score()
+    # split_word.each_with_index do |ltr|
+    #   if ltr.scrabble_score().include?(ltr)
+    #     array.push()
+    #   end
+    # end 
+  end  
 
-class Scrabble
-
-def scrabble_score()
-  points = { "a" => 1, "e" => 1, "i" => 1, "o" => 1, "u" => 1, "l" => 1, "n" => 1, "r" => 1,"s" => 1, "t" => 1, "d" => 2, "g" => 2, "b" => 3, "c" => 3, "m" => 3, "p" => 3, "f" => 4, "h" => 4, "v" => 4, "w" => 4, "y" => 4, "k" => 5, "j" => 8, "x" => 8, "q" => 10, "z" => 10 }
-end
+  def scrabble_score()
+    points = { "a" => 1, "e" => 1, "i" => 1, "o" => 1, "u" => 1, "l" => 1, "n" => 1, "r" => 1,"s" => 1, "t" => 1, "d" => 2, "g" => 2, "b" => 3, "c" => 3, "m" => 3, "p" => 3, "f" => 4, "h" => 4, "v" => 4, "w" => 4, "y" => 4, "k" => 5, "j" => 8, "x" => 8, "q" => 10, "z" => 10 }
+  end
+# end
 
 
 # a = [ "a", "b", "c" ]

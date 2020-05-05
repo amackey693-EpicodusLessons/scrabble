@@ -1,7 +1,7 @@
 require('rspec')
 require('scrabble')
 
-describe ('#scrabble_score') do
+describe ('Scrabble#scrabble_score') do
   it("returns a scrabble score for a letter with a point value of 1") do
     expect(scrabble_score.fetch("a")).to(eq(1))
   end
@@ -22,5 +22,11 @@ describe ('#scrabble_score') do
   end
   it("returns a scrabble score for a letter with a point value of 10") do
     expect(scrabble_score.fetch("z")).to(eq(10))
+  end
+end
+
+describe ('#compare') do
+  it("check that the compare function is properly splitting a word") do
+    expect(compare("hello")).to(eq(["h", "e", "l", "l", "o"]))
   end
 end
