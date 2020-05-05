@@ -2,8 +2,7 @@
 require('pry') 
 
 def scrabble_score()
-  one_point = { "a" => 1, "e" => 1, "i" => 1, "o" => 1, "u" => 1, "l" => 1, "n" => 1, "r" => 1,"s" => 1, "t" => 1, "d" => 2, "g" => 2 }
-  # two_point = { "d" => 2, "g" => 2 }
+  points = { "a" => 1, "e" => 1, "i" => 1, "o" => 1, "u" => 1, "l" => 1, "n" => 1, "r" => 1,"s" => 1, "t" => 1, "d" => 2, "g" => 2 }
   # three_point = { "b" => 3, "c" => 3, "m" => 3, "p" => 3 }
   # four_point = { "f" => 4, "h" => 4, "v" => 4, "w" => 4, "y" => 4 }
   # five_point = { "k" => 5 }
